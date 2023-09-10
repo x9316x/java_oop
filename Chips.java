@@ -1,9 +1,9 @@
 package geek_java_oop_lesson1;
 
-public class Сhips extends Product{
+public class Chips extends Product{
     private double weight; // Вес
     private String flavored; // Вкус
-    public Сhips(String name, String brand, double price, double weight, String flavored){
+    public Chips(String name, String brand, double price, double weight, String flavored){
         super(name, brand, price);
         this.weight = weight;
         this.flavored = flavored;

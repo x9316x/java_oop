@@ -19,11 +19,11 @@ public class VendingMachine {
         return null;
     }
 
-    public Сhips getChips(String name, double weight){
+    public Chips getChips(String name, String flavored){
         for (Product product : products) {
             if (product instanceof Chips){
                 Chips chips = (Chips) product;
-                if (chips.getName().equals(name) && chips.getVolume() == weight){
+                if (chips.getName().equals(name) && chips.getFlavored() == flavored){
                     return chips;
                 }
             }
