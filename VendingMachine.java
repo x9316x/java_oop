@@ -18,4 +18,16 @@ public class VendingMachine {
         }
         return null;
     }
+
+    public Сhips getChips(String name, double weight){
+        for (Product product : products) {
+            if (product instanceof Chips){
+                Chips chips = (Chips) product;
+                if (chips.getName().equals(name) && chips.getVolume() == weight){
+                    return chips;
+                }
+            }
+        }
+        return null;
+    }
 }
